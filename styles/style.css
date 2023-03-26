@@ -132,8 +132,11 @@ footer:hover {
 }
 
 .textos_e_imagem {
+    padding: 2% 15%;
     display: flex;
-    padding: 8% 20% 5% 15%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
 }
 
 .textos__informativos {
@@ -178,7 +181,7 @@ footer:hover {
 }
 
 .imagem__curriculo {
-    padding-right: 1%;
+    width: 50%;
 }
 
 @media (max-width: 1200px) {
@@ -196,6 +199,15 @@ footer:hover {
     }
 
     .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .textos_e_imagem {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .textos__informativos {
         width: auto;
     }
 }
